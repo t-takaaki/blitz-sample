@@ -18,7 +18,7 @@ const UserInfo = () => {
         <button
           className="button small"
           onClick={async () => {
-            await logout()
+            await logout(null)
           }}
         >
           Logout

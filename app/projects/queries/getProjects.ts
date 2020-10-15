@@ -5,7 +5,7 @@ type GetProjectsInput = Pick<FindManyProjectArgs, "where" | "orderBy" | "skip" |
 
 export default async function getProjects(
   { where, orderBy, skip = 0, take }: GetProjectsInput,
-  ctx: Ctx
+  ctx: Ctx | any
 ) {
   ctx.session.authorize()
 
